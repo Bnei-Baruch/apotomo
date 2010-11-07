@@ -115,7 +115,7 @@ require 'apotomo/rails/view_methods'
         def url_for_event(type, options)
           options.reverse_merge!(:type => type)
           
-          apotomo_event_path(apotomo_request_processor.address_for(options))
+          apotomo_event_url(apotomo_request_processor.address_for(options))
         end
         
         protected

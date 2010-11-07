@@ -240,7 +240,7 @@ module Apotomo
     end
     
     def url_for_event(type, options={})
-      apotomo_event_path address_for_event(type, options) 
+      apotomo_event_url address_for_event(type, options) 
     end
     
     alias_method :widget_id, :name
